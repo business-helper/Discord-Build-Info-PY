@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open('README.md', 'r') as readme:
+with open('README.md', encoding='utf-8', mode='r') as readme:
     readme_Desc = readme.read()
 
 setup(
@@ -9,7 +9,7 @@ setup(
     author="KiyonoKara",
     # author_email="None",
     description="A module to get Discord clients' build information.",
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     url="https://github.com/KiyonoKara/Discord-Build-Info-PY",
     packages=find_packages(exclude=['tests*']),
